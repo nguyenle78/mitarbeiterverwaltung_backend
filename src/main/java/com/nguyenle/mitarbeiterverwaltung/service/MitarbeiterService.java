@@ -21,6 +21,7 @@ public class MitarbeiterService {
         this.mitarbeiterRepo = mitarbeiterRepo;
     }
 
+    // generate random UUID
     public Mitarbeiter addMitarbeiter(Mitarbeiter mitarbeiter) {
         mitarbeiter.setMitarbeiterCode(UUID.randomUUID().toString());
         return mitarbeiterRepo.save(mitarbeiter);

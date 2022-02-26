@@ -1,4 +1,4 @@
-// Control file
+// RestController class
 
 package com.nguyenle.mitarbeiterverwaltung;
 
@@ -12,10 +12,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/mitarbeiter")
-public class MitarbeiterResource {
+public class MitarbeiterController {
     private final MitarbeiterService mitarbeiterService;
 
-    public MitarbeiterResource(MitarbeiterService mitarbeiterService) {
+    public MitarbeiterController(MitarbeiterService mitarbeiterService) {
         this.mitarbeiterService = mitarbeiterService;
     }
 
